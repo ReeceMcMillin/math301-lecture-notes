@@ -259,11 +259,89 @@ A \subseteq B, B \subseteq A
 <div class="def">
 <p><strong>Union</strong>: <em>\(A \cup B = \{ x \in \mathbb{U}: x \in A \text{ or } x \in B \}\)</em></p>
 </div>
-<h1 id="14-indexed-collections-of-sets"><a class="header" href="#14-indexed-collections-of-sets">1.4 Indexed Collections of Sets</a></h1>
-<h1 id="15-partitions-of-sets"><a class="header" href="#15-partitions-of-sets">1.5 Partitions of Sets</a></h1>
+<div class="def">
+<p><strong>Difference</strong>: <em>\(A \backslash B = \{ x \in \mathbb{U}: x \in A \text{ and } x \notin B \}\)</em></p>
+</div>
+<div class="def">
+<p><strong>Complement of \(A\)</strong>: <em>\(\overline{A} = \mathbb{U} \backslash A = \{ x \in \mathbb{U}: x \notin A \}\)</em></p>
+</div>
+<div class="note">
+<p>\(A \backslash B = A \cap \overline{B}\)</p>
+</div>
+<div class="warning">
+<p>Warning! \(\overline{\mathbb{N}}\): what is the universal set \(\mathbb{U}\)?</p>
+</div><h1 id="14-indexed-collections-of-sets"><a class="header" href="#14-indexed-collections-of-sets">1.4 Indexed Collections of Sets</a></h1>
+<p>Given many sets:
+\[
+A_1, A_2, \dots, A_n \quad n \text{ sets, } n \in \mathbb{N}
+\]</p>
+<div class="def">
+<p><strong>Union</strong>:
+\[
+\begin{align}
+A_1 \cup A_2 \cup \dots \cup A_n &amp;= \bigcup_{i=1}^n{A_i}\\
+&amp;= \{ x \in \mathbb{U}: x \in A_i \text{ for some } i, i=1\dots n \}
+\end{align}
+\]</p>
+</div>
+<div class="def">
+<p><strong>Intersection</strong>: <em>\[A_1 \cap A_2 \cap \dots \cap A_n = \bigcap_{i=1}^n{A_i}\]</em></p>
+</div>
+<div class="ex">
+<details>
+<summary>
+<strong>Example:</strong>
+<p>For \(n \in \mathbb{N}, S_n = \{ n, 2n \}\). Suppose \(I = \{ 1, 2, 4 \}.\)</p>
+<p>\[
+\text{Find }\bigcup_{\alpha \in I}{S_\alpha}
+\]</p>
+</summary>
+<p>\[
+\bigcup_{\alpha \in I}{S_\alpha} = \bigcup_{\alpha \in \{ 1, 2, 4 \}}{S_\alpha} = S_1 \cup S_2 \cup S_3
+\]
+\[
+= \{ 1, 2 \} \cup \{ 2, 4 \} \cup \{ 4, 8 \} = \{ 1, 2, 4, 8 \}
+\]</p>
+</details>
+</div><h1 id="15-partitions-of-sets"><a class="header" href="#15-partitions-of-sets">1.5 Partitions of Sets</a></h1>
+<div class="def">
+<p><strong>Pairwise Disjoint</strong>: <em>Let \(A\) be a set. A collection \(S\) of subsets of \(A\) is <strong>pairwise disjoint</strong> if every two distinct sets in \(S\) are disjoint.</em></p>
+</div>
+<div class="def">
+<p><strong>Partition</strong>: <em>Let \(A\) be a set. If \(S\) is a collection of <strong>non-empty</strong> subsets of \(A\) and</em></p>
+<ol>
+<li>\(S\) is pairwise disjoint and</li>
+<li>the union of the subsets in \(S\) is \(A\)</li>
+</ol>
+<p>then we say \(S\) is a <strong>partition</strong> of \(A\).</p>
+</div>
+<p>This can be useful if, for example, we're trying to prove a theorem for the integers \(Z\). If we can prove the theorem for each partition, for example the positives, negatives, and zero separately, then we prove for the whole set \(Z\).</p>
 <h1 id="16-cartesian-products-of-sets"><a class="header" href="#16-cartesian-products-of-sets">1.6 Cartesian Products of Sets</a></h1>
-<h1 id="chapter-2"><a class="header" href="#chapter-2">Chapter 2</a></h1>
+<div class="def">
+<p><strong>Cartesian Product of A and B</strong>: <em>Let \(A, B\) be sets.</em></p>
+<p>\[
+A \times B \overset{def} = \{ (x, y): x \in A, y \in B \}
+\]</p>
+</div>
+<div class="note">
+<p>In general, \(A \times B \neq B \times A\).</p>
+</div><h1 id="chapter-2"><a class="header" href="#chapter-2">Chapter 2</a></h1>
 <h1 id="statements"><a class="header" href="#statements">Statements</a></h1>
+<div class="def">
+<p><strong>Statement</strong>:</p>
+<ul>
+<li>A declarative sentence or assertion.</li>
+<li>Either true or false.</li>
+<li><strong>NOT</strong> both true <u>and</u> false.</li>
+</ul>
+</div>
+<p>So, every statement has a truth value \(T\) (true) or \(F\) (false).</p>
+<p><strong>Notation</strong>:</p>
+<ul>
+<li>\(P, Q, R, \dots\)</li>
+<li>\(P_1, P_2, P_3, \dots\)
+Remember, these are <u>sentences</u>!</li>
+</ul>
 <h1 id="negations"><a class="header" href="#negations">Negations</a></h1>
 <h1 id="disjunctions--conjunctions"><a class="header" href="#disjunctions--conjunctions">Disjunctions &amp; Conjunctions</a></h1>
 <h1 id="implications"><a class="header" href="#implications">Implications</a></h1>
